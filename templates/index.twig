@@ -1,11 +1,14 @@
 {% extends 'base.twig' %}
 
 {% block content %}
-
-<h2>Finn n-gram, Snorre!</h2>
+<div class="page-header"><h1>Finn n-gram, Snorre!</h1></div>
 
 <form method="post">
-N = <select name="n">
+
+<div class="form-group">
+
+<label for="n">Finn: </label>
+<select class="form-control" id="n" name="n">
 <option value="1">Enkeltord</option>
 <option value="2">2-gram</option>
 <option value="3">3-gram</option>
@@ -13,9 +16,14 @@ N = <select name="n">
 <option value="5">5-gram</option>
 <option value="6">6-gram</option>
 </select>
-<br/><br/><b>Tekst:</b><br/>
-<textarea rows=30 class="fullwidth" name="tekst"></textarea>
-<input type="submit" value="Finn n-gram">
+<br/><br/>
+    <label for="tekst"><b>Tekst:</b></label>
+    <br/>
+<textarea rows=20 class="form-control" id="tekst" name="tekst"></textarea>
+<input type="submit" class="btn btn-info" value="Finn n-gram">
+
+</div>
+
 </form>
 
 {% endblock %}

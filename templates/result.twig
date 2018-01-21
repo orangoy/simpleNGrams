@@ -3,7 +3,10 @@
 {% block content %}
 
 <h2>Resultat for  {{ n }}-gram</h2>
-<a href=''>[Tilbake]</a>
+
+<a href="" class="btn btn-info" role="button">Tilbake</a>
+
+
 
 <textarea rows="{{ ngrams | length }}" class=fullwidth>{% for ngram in ngrams %}
 {{ ngram }}
