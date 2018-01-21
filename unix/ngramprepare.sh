@@ -7,4 +7,5 @@ echo "$text" |
 sed "s/  */ /g" |
 grep -v "^\s$" |
 $DIR/ngramcore.sh $N |
-/bin/sort -nr
+/bin/sort --ignore-case -k1,1nr -k2
+
