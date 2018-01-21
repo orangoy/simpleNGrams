@@ -7,4 +7,4 @@ echo "$text" |
 sed "s/  */ /g" |
 grep -v "^\s$" |
 $DIR/ngramcore.sh $N |
-/usr/bin/sort -nr
+/bin/sort -nr
