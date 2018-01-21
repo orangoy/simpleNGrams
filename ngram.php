@@ -2,7 +2,7 @@
 $txt = $_POST['tekst'];
 $txt = iconv(mb_detect_encoding($txt, mb_detect_order(), true), "UTF-8", $txt);
 
-if ( isset($_POST['n']) && intval($_POST['n']) > 1) $n = intval($_POST['n']);
+if ( isset($_POST['n']) && intval($_POST['n']) > 0) $n = intval($_POST['n']);
 else $n = 2;
 
 $ngrams = getNgrams($txt, $n);
