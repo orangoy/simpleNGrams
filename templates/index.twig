@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.twig' %}
 
-<head>
-    <meta charset="UTF-8" >
-    <style> .fullwidth {width: 100%; }</style>
-</head>
-
-<body>
+{% block content %}
 
 <h2>Finn n-gram, Snorre!</h2>
 
@@ -24,4 +18,4 @@ N = <select name="n">
 <input type="submit" value="Finn n-gram">
 </form>
 
-</body>
+{% endblock %}
