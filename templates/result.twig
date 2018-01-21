@@ -7,8 +7,7 @@
 <a href="" class="btn btn-info" role="button">Tilbake</a>
 
 
-
-<textarea rows="{{ ngrams | length }}" class=fullwidth>{% for ngram in ngrams %}
+<textarea rows="{{ ngrams | length }}" class="fullwidth js-auto-size">{% for ngram in ngrams %}
 {{ ngram }}
 {% endfor %}
 </textarea>
