@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ <meta charset="UTF-8" >
+ <style> .fullwidth {width: 100%; }</style>
+</head>
+
+<body><h2>Resultat for  {{ n }}-gram</h2>
+<a href=''>[Tilbake]</a>
+
+<textarea rows="{{ ngrams | length }}" class=fullwidth>{% for ngram in ngrams %}
+{{ ngram }}
+{% endfor %}
+</textarea>
+
+</body></html>
